@@ -17,8 +17,6 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-ENV OP_CONNECT_HOST https://secrets.wbml.io/
-
 ENV ROOT=/home/python
 RUN mkdir -p $ROOT
 COPY . $ROOT
